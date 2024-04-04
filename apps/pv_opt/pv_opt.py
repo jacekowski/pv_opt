@@ -16,6 +16,7 @@ VERSION = "3.12.4"
 
 OCTOPUS_PRODUCT_URL = r"https://api.octopus.energy/v1/products/"
 
+VERSION = "3.13.0"
 DEBUG = False
 
 DATE_TIME_FORMAT_LONG = "%Y-%m-%d %H:%M:%S%z"
@@ -51,7 +52,7 @@ CONSUMPTION_SHAPE = {
     "consumption": [300, 200, 150, 500, 500, 750, 750, 300],
 }
 
-INVERTER_TYPES = ["SOLIS_SOLAX_MODBUS", "SOLIS_CORE_MODBUS", "SOLIS_SOLARMAN"]
+INVERTER_TYPES = ["SUNSYNK_HA"]
 
 SYSTEM_ARGS = [
     "module",
@@ -323,7 +324,7 @@ class PVOpt(hass.Hass):
         self.log(f"Time Zone Offset: {self.get_tz_offset()} minutes")
 
         # self.log(self.args)
-        self.inverter_type = self.args.pop("inverter_type", "SOLIS_SOLAX_MODBUS")
+        self.inverter_type = self.args.pop("inverter_type", "SUNSYNK_HA")
         self.device_name = self.args.pop("device_name", "solis")
 
         self.redact = self.args.pop("redact_personal_data_from_log", True)

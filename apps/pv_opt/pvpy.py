@@ -305,7 +305,7 @@ class Tariff:
         data = []
         for row in r.json()["data"]["Rows"]:
             str = ""
-            # pprint.pprint(row)
+            #pprint.pprint(row)
 
             for column in row:
                 if isinstance(row[column], list):
@@ -316,19 +316,20 @@ class Tariff:
                                 # print(time)
                         else:
                             if len(i["Name"]) > 8:
-                                # print(i["Name"])
-                                data.append(float(i["Value"].replace(",", ".")))
-                                index.append(
-                                    pd.Timestamp(
-                                        i["Name"].split("-")[2]
-                                        + "-"
-                                        + i["Name"].split("-")[1]
-                                        + "-"
-                                        + i["Name"].split("-")[0]
-                                        + " "
-                                        + time
+                                self.log(i["Name"] + " v "+ i["Value"])
+                                if len(i["Value"]) > 1 :
+                                    data.append(float(i["Value"].replace(",", ".")))
+                                    index.append(
+                                        pd.Timestamp(
+                                            i["Name"].split("-")[2]
+                                            + "-"
+                                            + i["Name"].split("-")[1]
+                                            + "-"
+                                            + i["Name"].split("-")[0]
+                                            + " "
+                                            + time
+                                        )
                                     )
-                                )
 
         price = pd.Series(index=index, data=data).sort_index()
         price.index = price.index.tz_localize("CET")
@@ -634,7 +635,8 @@ class PVsystemModel:
                 axis=1,
             )
             plunge_cost = round(contract.net_cost(df).sum(), 1)
-            self.log(f"Plunge cost: {plunge_cost}")
+            if log:
+                self.log(f"Plunge cost: {plunge_cost}")
             base_cost = plunge_cost
 
         # --------------------------------------------------------------------------------------------

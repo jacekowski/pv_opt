@@ -1,0 +1,2574 @@
+[
+    {
+        "id": "9061db0d93e63ca7",
+        "type": "tab",
+        "label": "PV_Opt",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "c19a875af54f867e",
+        "type": "join",
+        "z": "9061db0d93e63ca7",
+        "name": "",
+        "mode": "custom",
+        "build": "object",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": true,
+        "timeout": "",
+        "count": "6",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "num",
+        "reduceFixup": "",
+        "x": 690,
+        "y": 260,
+        "wires": [
+            [
+                "3b11147661607497"
+            ]
+        ]
+    },
+    {
+        "id": "11a3256ecb586c7a",
+        "type": "poll-state",
+        "z": "9061db0d93e63ca7",
+        "name": "",
+        "server": "e0bfd2ef.e1677",
+        "version": 3,
+        "exposeAsEntityConfig": "",
+        "updateInterval": "10",
+        "updateIntervalType": "num",
+        "updateIntervalUnits": "seconds",
+        "outputInitially": true,
+        "outputOnChanged": true,
+        "entityId": "select.sunsynk_prog1_time",
+        "stateType": "str",
+        "ifState": "",
+        "ifStateType": "str",
+        "ifStateOperator": "is",
+        "outputs": 1,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entityState"
+            },
+            {
+                "property": "data",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entity"
+            },
+            {
+                "property": "topic",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "triggerId"
+            }
+        ],
+        "x": 190,
+        "y": 160,
+        "wires": [
+            [
+                "767bfc50a7370dbb"
+            ]
+        ]
+    },
+    {
+        "id": "a3c8d397789dce9d",
+        "type": "poll-state",
+        "z": "9061db0d93e63ca7",
+        "name": "",
+        "server": "e0bfd2ef.e1677",
+        "version": 3,
+        "exposeAsEntityConfig": "",
+        "updateInterval": "10",
+        "updateIntervalType": "num",
+        "updateIntervalUnits": "seconds",
+        "outputInitially": true,
+        "outputOnChanged": true,
+        "entityId": "select.sunsynk_prog2_time",
+        "stateType": "str",
+        "ifState": "",
+        "ifStateType": "str",
+        "ifStateOperator": "is",
+        "outputs": 1,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entityState"
+            },
+            {
+                "property": "data",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entity"
+            },
+            {
+                "property": "topic",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "triggerId"
+            }
+        ],
+        "x": 190,
+        "y": 200,
+        "wires": [
+            [
+                "767bfc50a7370dbb"
+            ]
+        ]
+    },
+    {
+        "id": "977f0e7de51a9cc0",
+        "type": "poll-state",
+        "z": "9061db0d93e63ca7",
+        "name": "",
+        "server": "e0bfd2ef.e1677",
+        "version": 3,
+        "exposeAsEntityConfig": "",
+        "updateInterval": "10",
+        "updateIntervalType": "num",
+        "updateIntervalUnits": "seconds",
+        "outputInitially": true,
+        "outputOnChanged": true,
+        "entityId": "select.sunsynk_prog3_time",
+        "stateType": "str",
+        "ifState": "",
+        "ifStateType": "str",
+        "ifStateOperator": "is",
+        "outputs": 1,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entityState"
+            },
+            {
+                "property": "data",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entity"
+            },
+            {
+                "property": "topic",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "triggerId"
+            }
+        ],
+        "x": 190,
+        "y": 240,
+        "wires": [
+            [
+                "767bfc50a7370dbb"
+            ]
+        ]
+    },
+    {
+        "id": "a6b987e9baebc842",
+        "type": "poll-state",
+        "z": "9061db0d93e63ca7",
+        "name": "",
+        "server": "e0bfd2ef.e1677",
+        "version": 3,
+        "exposeAsEntityConfig": "",
+        "updateInterval": "10",
+        "updateIntervalType": "num",
+        "updateIntervalUnits": "seconds",
+        "outputInitially": true,
+        "outputOnChanged": true,
+        "entityId": "select.sunsynk_prog4_time",
+        "stateType": "str",
+        "ifState": "",
+        "ifStateType": "str",
+        "ifStateOperator": "is",
+        "outputs": 1,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entityState"
+            },
+            {
+                "property": "data",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entity"
+            },
+            {
+                "property": "topic",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "triggerId"
+            }
+        ],
+        "x": 190,
+        "y": 280,
+        "wires": [
+            [
+                "767bfc50a7370dbb"
+            ]
+        ]
+    },
+    {
+        "id": "6b5c969f10d3403b",
+        "type": "poll-state",
+        "z": "9061db0d93e63ca7",
+        "name": "",
+        "server": "e0bfd2ef.e1677",
+        "version": 3,
+        "exposeAsEntityConfig": "",
+        "updateInterval": "10",
+        "updateIntervalType": "num",
+        "updateIntervalUnits": "seconds",
+        "outputInitially": true,
+        "outputOnChanged": true,
+        "entityId": "select.sunsynk_prog5_time",
+        "stateType": "str",
+        "ifState": "",
+        "ifStateType": "str",
+        "ifStateOperator": "is",
+        "outputs": 1,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entityState"
+            },
+            {
+                "property": "data",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entity"
+            },
+            {
+                "property": "topic",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "triggerId"
+            }
+        ],
+        "x": 190,
+        "y": 320,
+        "wires": [
+            [
+                "767bfc50a7370dbb"
+            ]
+        ]
+    },
+    {
+        "id": "3c5351560de17104",
+        "type": "poll-state",
+        "z": "9061db0d93e63ca7",
+        "name": "",
+        "server": "e0bfd2ef.e1677",
+        "version": 3,
+        "exposeAsEntityConfig": "",
+        "updateInterval": "10",
+        "updateIntervalType": "num",
+        "updateIntervalUnits": "seconds",
+        "outputInitially": true,
+        "outputOnChanged": true,
+        "entityId": "select.sunsynk_prog6_time",
+        "stateType": "str",
+        "ifState": "",
+        "ifStateType": "str",
+        "ifStateOperator": "is",
+        "outputs": 1,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entityState"
+            },
+            {
+                "property": "data",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entity"
+            },
+            {
+                "property": "topic",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "triggerId"
+            }
+        ],
+        "x": 190,
+        "y": 360,
+        "wires": [
+            [
+                "767bfc50a7370dbb"
+            ]
+        ]
+    },
+    {
+        "id": "767bfc50a7370dbb",
+        "type": "moment",
+        "z": "9061db0d93e63ca7",
+        "name": "",
+        "topic": "",
+        "input": "payload",
+        "inputType": "msg",
+        "inTz": "Europe/London",
+        "adjAmount": 0,
+        "adjType": "days",
+        "adjDir": "add",
+        "format": "",
+        "locale": "C",
+        "output": "payload",
+        "outputType": "msg",
+        "outTz": "Europe/London",
+        "x": 500,
+        "y": 260,
+        "wires": [
+            [
+                "c19a875af54f867e"
+            ]
+        ]
+    },
+    {
+        "id": "3b11147661607497",
+        "type": "function",
+        "z": "9061db0d93e63ca7",
+        "name": "find slot",
+        "func": "var time_now = new Date();\nvar sunsynk_time = new Date(flow.get('sunsynk_time'));\n\nvar last_key;\nvar current_slot;\n\nfor (const [key, value] of Object.entries(msg.payload)) {\n    var val_time = new Date(value); \n    if (val_time< time_now){\n        last_key = key;\n    }\n    if (val_time< sunsynk_time){\n        current_slot = key;\n    }\n}\n\nmsg.payload.last_key = last_key;\nmsg.payload.sunsynk_time = sunsynk_time;\nmsg.payload.current_slot = current_slot;\n\nif (current_slot !== undefined){\n    msg.payload.current_slot_num = parseInt(current_slot.replace(\"select.sunsynk_prog\", \" \").replace(\"_time\",\" \"));\n    msg.current_slot = msg.payload.current_slot_num;\n}\n\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 820,
+        "y": 260,
+        "wires": [
+            [
+                "8eb4509e13ce0422",
+                "88000a521ac52d0d"
+            ]
+        ]
+    },
+    {
+        "id": "8eb4509e13ce0422",
+        "type": "rbe",
+        "z": "9061db0d93e63ca7",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "septopics": false,
+        "property": "payload",
+        "topi": "topic",
+        "x": 950,
+        "y": 260,
+        "wires": [
+            [
+                "f29846c0c315778e",
+                "e4458e5ca616ae93"
+            ]
+        ]
+    },
+    {
+        "id": "f29846c0c315778e",
+        "type": "debug",
+        "z": "9061db0d93e63ca7",
+        "name": "test2",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1150,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "e4458e5ca616ae93",
+        "type": "change",
+        "z": "9061db0d93e63ca7",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "current_slot",
+                "pt": "flow",
+                "to": "current_slot",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1120,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "654fcb6d303a9b1b",
+        "type": "ha-time-entity",
+        "z": "9061db0d93e63ca7",
+        "name": "Start Discharge Time",
+        "version": 0,
+        "debugenabled": false,
+        "inputs": 0,
+        "outputs": 1,
+        "entityConfig": "4ca3edbc050adbe9",
+        "mode": "listen",
+        "value": "payload",
+        "valueType": "msg",
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "value"
+            },
+            {
+                "property": "previousValue",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "previousValue"
+            }
+        ],
+        "x": 140,
+        "y": 700,
+        "wires": [
+            [
+                "03a406cd4ddaeaaf"
+            ]
+        ]
+    },
+    {
+        "id": "d8da450a2351aaf8",
+        "type": "ha-time-entity",
+        "z": "9061db0d93e63ca7",
+        "name": "End Discharge Time",
+        "version": 0,
+        "debugenabled": false,
+        "inputs": 0,
+        "outputs": 1,
+        "entityConfig": "f3b3b5f3917de552",
+        "mode": "listen",
+        "value": "payload",
+        "valueType": "msg",
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "value"
+            },
+            {
+                "property": "previousValue",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "previousValue"
+            }
+        ],
+        "x": 130,
+        "y": 740,
+        "wires": [
+            [
+                "a88cda0d9705b358"
+            ]
+        ]
+    },
+    {
+        "id": "e80341685be614d7",
+        "type": "ha-time-entity",
+        "z": "9061db0d93e63ca7",
+        "name": "Start Charge Time",
+        "version": 0,
+        "debugenabled": false,
+        "inputs": 0,
+        "outputs": 1,
+        "entityConfig": "b2f599741deab7d0",
+        "mode": "listen",
+        "value": "payload",
+        "valueType": "msg",
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "value"
+            },
+            {
+                "property": "previousValue",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "previousValue"
+            }
+        ],
+        "x": 130,
+        "y": 500,
+        "wires": [
+            [
+                "1e8e860ec80a3ddb"
+            ]
+        ]
+    },
+    {
+        "id": "b257609bcdaf6815",
+        "type": "ha-time-entity",
+        "z": "9061db0d93e63ca7",
+        "name": "End Charge Time",
+        "version": 0,
+        "debugenabled": false,
+        "inputs": 0,
+        "outputs": 1,
+        "entityConfig": "a9fcf270e3281aae",
+        "mode": "listen",
+        "value": "payload",
+        "valueType": "msg",
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "value"
+            },
+            {
+                "property": "previousValue",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "previousValue"
+            }
+        ],
+        "x": 120,
+        "y": 540,
+        "wires": [
+            [
+                "0533106615e4241e"
+            ]
+        ]
+    },
+    {
+        "id": "a0a54c0d633abae5",
+        "type": "trigger-state",
+        "z": "9061db0d93e63ca7",
+        "name": "",
+        "server": "e0bfd2ef.e1677",
+        "version": 4,
+        "inputs": 0,
+        "outputs": 2,
+        "exposeAsEntityConfig": "",
+        "entityId": "text.sunsynk_date_time",
+        "entityIdType": "exact",
+        "debugEnabled": false,
+        "constraints": [],
+        "customOutputs": [],
+        "outputInitially": true,
+        "stateType": "str",
+        "enableInput": false,
+        "exposeToHomeAssistant": false,
+        "haConfig": [
+            {
+                "property": "name",
+                "value": ""
+            },
+            {
+                "property": "icon",
+                "value": ""
+            }
+        ],
+        "x": 180,
+        "y": 40,
+        "wires": [
+            [
+                "2df74c03f103fb5e"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "2df74c03f103fb5e",
+        "type": "moment",
+        "z": "9061db0d93e63ca7",
+        "name": "",
+        "topic": "",
+        "input": "payload",
+        "inputType": "msg",
+        "inTz": "Europe/London",
+        "adjAmount": 0,
+        "adjType": "days",
+        "adjDir": "add",
+        "format": "",
+        "locale": "C",
+        "output": "payload",
+        "outputType": "msg",
+        "outTz": "Europe/London",
+        "x": 480,
+        "y": 40,
+        "wires": [
+            [
+                "e2a56a6940666f9a"
+            ]
+        ]
+    },
+    {
+        "id": "e2a56a6940666f9a",
+        "type": "change",
+        "z": "9061db0d93e63ca7",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "sunsynk_time",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 780,
+        "y": 40,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "37fae9011de57169",
+        "type": "ha-switch",
+        "z": "9061db0d93e63ca7",
+        "name": "Hold SoC Enable",
+        "version": 0,
+        "debugenabled": false,
+        "inputs": 0,
+        "outputs": 2,
+        "entityConfig": "8970f70a786cca41",
+        "enableInput": false,
+        "outputOnStateChange": true,
+        "outputProperties": [
+            {
+                "property": "outputType",
+                "propertyType": "msg",
+                "value": "state change",
+                "valueType": "str"
+            },
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entityState"
+            }
+        ],
+        "x": 120,
+        "y": 860,
+        "wires": [
+            [
+                "81bb070f03af16e4"
+            ],
+            [
+                "81bb070f03af16e4"
+            ]
+        ]
+    },
+    {
+        "id": "852ad41cb0096699",
+        "type": "ha-switch",
+        "z": "9061db0d93e63ca7",
+        "name": "Schedule Discharge",
+        "version": 0,
+        "debugenabled": false,
+        "inputs": 0,
+        "outputs": 2,
+        "entityConfig": "a2817464718525af",
+        "enableInput": false,
+        "outputOnStateChange": true,
+        "outputProperties": [
+            {
+                "property": "outputType",
+                "propertyType": "msg",
+                "value": "state change",
+                "valueType": "str"
+            },
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entityState"
+            }
+        ],
+        "x": 130,
+        "y": 660,
+        "wires": [
+            [
+                "33a68e25ce5439a7"
+            ],
+            [
+                "33a68e25ce5439a7"
+            ]
+        ]
+    },
+    {
+        "id": "5d9f8f42dfd06c0b",
+        "type": "ha-switch",
+        "z": "9061db0d93e63ca7",
+        "name": "Schedule Charge",
+        "version": 0,
+        "debugenabled": false,
+        "inputs": 0,
+        "outputs": 2,
+        "entityConfig": "421515f2e5f5967b",
+        "enableInput": false,
+        "outputOnStateChange": true,
+        "outputProperties": [
+            {
+                "property": "outputType",
+                "propertyType": "msg",
+                "value": "state change",
+                "valueType": "str"
+            },
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entityState"
+            }
+        ],
+        "x": 120,
+        "y": 460,
+        "wires": [
+            [
+                "4fe9eac1a9b00a07"
+            ],
+            [
+                "4fe9eac1a9b00a07"
+            ]
+        ]
+    },
+    {
+        "id": "c540f719e27a4dd0",
+        "type": "ha-number",
+        "z": "9061db0d93e63ca7",
+        "name": "Discharge Power",
+        "version": 1,
+        "debugenabled": false,
+        "inputs": 0,
+        "outputs": 1,
+        "entityConfig": "cf65e62feedeb8b9",
+        "mode": "listen",
+        "value": "payload",
+        "valueType": "msg",
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "value"
+            },
+            {
+                "property": "previousValue",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "previousValue"
+            }
+        ],
+        "x": 120,
+        "y": 780,
+        "wires": [
+            [
+                "bbe99829cb3fba67"
+            ]
+        ]
+    },
+    {
+        "id": "e57dc4901cad6fce",
+        "type": "ha-number",
+        "z": "9061db0d93e63ca7",
+        "name": "Charge Power",
+        "version": 1,
+        "debugenabled": false,
+        "inputs": 0,
+        "outputs": 1,
+        "entityConfig": "431582c910f2871d",
+        "mode": "listen",
+        "value": "payload",
+        "valueType": "msg",
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "value"
+            },
+            {
+                "property": "previousValue",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "previousValue"
+            }
+        ],
+        "x": 110,
+        "y": 580,
+        "wires": [
+            [
+                "838729f2088544c7"
+            ]
+        ]
+    },
+    {
+        "id": "5e3a67e1e8192f6b",
+        "type": "ha-number",
+        "z": "9061db0d93e63ca7",
+        "name": "Hold SoC",
+        "version": 1,
+        "debugenabled": false,
+        "inputs": 0,
+        "outputs": 1,
+        "entityConfig": "0ecac548a5811365",
+        "mode": "listen",
+        "value": "payload",
+        "valueType": "msg",
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "value"
+            },
+            {
+                "property": "previousValue",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "previousValue"
+            }
+        ],
+        "x": 100,
+        "y": 900,
+        "wires": [
+            [
+                "5f62752ca01babfb"
+            ]
+        ]
+    },
+    {
+        "id": "88000a521ac52d0d",
+        "type": "debug",
+        "z": "9061db0d93e63ca7",
+        "name": "test3",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1010,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "4fe9eac1a9b00a07",
+        "type": "change",
+        "z": "9061db0d93e63ca7",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "schedule_charge",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 450,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "33a68e25ce5439a7",
+        "type": "change",
+        "z": "9061db0d93e63ca7",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "schedule_discharge",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 380,
+        "y": 660,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "81bb070f03af16e4",
+        "type": "change",
+        "z": "9061db0d93e63ca7",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "hold_soc_enable",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 370,
+        "y": 860,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "11e8da4f25c8d1d8",
+        "type": "change",
+        "z": "9061db0d93e63ca7",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "start_charge_time",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 610,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7a188e125b5bc001",
+        "type": "change",
+        "z": "9061db0d93e63ca7",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "end_charge_time",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 610,
+        "y": 540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ef9253a7fd4d644b",
+        "type": "change",
+        "z": "9061db0d93e63ca7",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "start_discharge_time",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 620,
+        "y": 700,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5d39f65b4625c3b4",
+        "type": "change",
+        "z": "9061db0d93e63ca7",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "end_discharge_time",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 620,
+        "y": 740,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "838729f2088544c7",
+        "type": "change",
+        "z": "9061db0d93e63ca7",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "charge_power",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 360,
+        "y": 580,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "bbe99829cb3fba67",
+        "type": "change",
+        "z": "9061db0d93e63ca7",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "discharge_power",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 370,
+        "y": 780,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5f62752ca01babfb",
+        "type": "change",
+        "z": "9061db0d93e63ca7",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "hold_soc",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 350,
+        "y": 900,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "92f2f0467ca60d85",
+        "type": "function",
+        "z": "9061db0d93e63ca7",
+        "name": "decide inverter settings",
+        "func": "var schedule_charge = flow.get('schedule_charge');\nvar schedule_discharge = flow.get('schedule_discharge');\nvar hold_soc_level = flow.get('hold_soc');\nvar hold_soc_enable = flow.get('hold_soc_enable');\n\nvar time_now = new Date();\n\n\nvar target_power = 5000;\n\nvar charge_now = false;\nvar discharge_now = false;\n\nmsg.schedule_charge = schedule_charge;\nmsg.schedule_discharge = schedule_discharge;\n\nmsg.charge = \"No Grid or Gen\"\nmsg.target_current = 50;\nmsg.target_soc = 10;\nmsg.state = [];\n\nmsg.state[0] = false;\n\nif (schedule_charge){\n    var start_charge_time = new Date(flow.get('start_charge_time'));\n    var end_charge_time = new Date(flow.get('end_charge_time'));\n    var charge_power = flow.get('charge_power');\n\n    msg.state[1] = true;\n\n\n    if (start_charge_time > end_charge_time ){\n        var addMlSeconds = 24 * 60 * 60 * 1000;\n        start_charge_time = new  Date (start_charge_time.getTime() - addMlSeconds);\n    }\n\n    if (time_now > start_charge_time && time_now < end_charge_time){\n        charge_now = true;\n        msg.state[2] = true;\n    }\n\n    msg.start_charge_timet = flow.get('start_charge_time');\n    msg.end_charge_timet = flow.get('end_charge_time');\n    msg.start_charge_time = start_charge_time;\n    msg.end_charge_time = end_charge_time;\n    msg.time_now = time_now;\n    msg.charge_now = charge_now;\n\n    if (charge_now) {\n        msg.charge_power = charge_power;\n\n        msg.target_soc = 100;\n        msg.load_limit = \"Zero Export\";\n        msg.charge = \"Allow Grid\"\n        msg.target_power = charge_power;\n        msg.target_current = charge_power/50*1.1;\n        msg.state[3] = true;\n    } else {\n                schedule_charge = false;\n        msg.state[4] = true;\n    }\n\n\n}\n\nif (schedule_discharge){\n    var start_discharge_time = new Date(flow.get('start_discharge_time'));\n    var end_discharge_time = new Date(flow.get('end_discharge_time'));\n    var discharge_power = flow.get('discharge_power');\n\n    if (start_discharge_time > end_discharge_time ){\n        var addMlSeconds = 24 * 60 * 60 * 1000;\n        start_discharge_time = new  Date (start_discharge_time.getTime() - addMlSeconds);\n    }\n\n    if (time_now > start_discharge_time && time_now < end_discharge_time){\n        discharge_now = true;\n    }\n    msg.discharge_now = discharge_now;\n\n    if (discharge_now) {\n        msg.discharge_power = discharge_power;\n\n        msg.target_soc = 10;\n        msg.load_limit = \"Allow Export\";\n        msg.charge = \"No Grid or Gen\"\n        msg.target_power = discharge_power;\n    } else {\n        discharge_now = false;\n    }\n\n\n\n}\n\nif (!schedule_charge && !schedule_discharge){\n    msg.target_soc = 10;\n    msg.load_limit = \"Zero Export\";\n    msg.charge = \"No Grid or Gen\"\n    msg.target_power = 5000;\n\n    if (hold_soc_enable){\n        msg.target_soc = hold_soc_level;\n    }\n\n}\n\n\nflow.set(\"charge_now\", charge_now);\nflow.set(\"discharge_now\", discharge_now);\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 850,
+        "y": 620,
+        "wires": [
+            [
+                "e0cc12429781196d",
+                "7832d35ef7ecafad"
+            ]
+        ]
+    },
+    {
+        "id": "0f075cde2002b850",
+        "type": "inject",
+        "z": "9061db0d93e63ca7",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 650,
+        "y": 620,
+        "wires": [
+            [
+                "92f2f0467ca60d85"
+            ]
+        ]
+    },
+    {
+        "id": "e0cc12429781196d",
+        "type": "debug",
+        "z": "9061db0d93e63ca7",
+        "name": "test4",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1070,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "1e8e860ec80a3ddb",
+        "type": "moment",
+        "z": "9061db0d93e63ca7",
+        "name": "",
+        "topic": "",
+        "input": "payload",
+        "inputType": "msg",
+        "inTz": "Europe/London",
+        "adjAmount": 0,
+        "adjType": "days",
+        "adjDir": "add",
+        "format": "",
+        "locale": "C",
+        "output": "payload",
+        "outputType": "msg",
+        "outTz": "Europe/London",
+        "x": 360,
+        "y": 500,
+        "wires": [
+            [
+                "11e8da4f25c8d1d8"
+            ]
+        ]
+    },
+    {
+        "id": "0533106615e4241e",
+        "type": "moment",
+        "z": "9061db0d93e63ca7",
+        "name": "",
+        "topic": "",
+        "input": "payload",
+        "inputType": "msg",
+        "inTz": "Europe/London",
+        "adjAmount": 0,
+        "adjType": "days",
+        "adjDir": "add",
+        "format": "",
+        "locale": "C",
+        "output": "payload",
+        "outputType": "msg",
+        "outTz": "Europe/London",
+        "x": 360,
+        "y": 540,
+        "wires": [
+            [
+                "7a188e125b5bc001"
+            ]
+        ]
+    },
+    {
+        "id": "03a406cd4ddaeaaf",
+        "type": "moment",
+        "z": "9061db0d93e63ca7",
+        "name": "",
+        "topic": "",
+        "input": "payload",
+        "inputType": "msg",
+        "inTz": "Europe/London",
+        "adjAmount": 0,
+        "adjType": "days",
+        "adjDir": "add",
+        "format": "",
+        "locale": "C",
+        "output": "payload",
+        "outputType": "msg",
+        "outTz": "Europe/London",
+        "x": 360,
+        "y": 700,
+        "wires": [
+            [
+                "ef9253a7fd4d644b"
+            ]
+        ]
+    },
+    {
+        "id": "a88cda0d9705b358",
+        "type": "moment",
+        "z": "9061db0d93e63ca7",
+        "name": "",
+        "topic": "",
+        "input": "payload",
+        "inputType": "msg",
+        "inTz": "Europe/London",
+        "adjAmount": 0,
+        "adjType": "days",
+        "adjDir": "add",
+        "format": "",
+        "locale": "C",
+        "output": "payload",
+        "outputType": "msg",
+        "outTz": "Europe/London",
+        "x": 360,
+        "y": 740,
+        "wires": [
+            [
+                "5d39f65b4625c3b4"
+            ]
+        ]
+    },
+    {
+        "id": "7832d35ef7ecafad",
+        "type": "function",
+        "z": "9061db0d93e63ca7",
+        "name": "configure inverter",
+        "func": "var current_slot = flow.get('current_slot');\n\nvar outs = [];\n\nouts[0] = {};\nouts[0].load_limit = msg.load_limit;\nif (msg.target_current !== undefined){\n    outs[0].target_current = msg.target_current;\n}\n\nvar out = {};\n\nout.soc = msg.target_soc;\nout.charge = msg.charge;\nout.target_power = msg.target_power;\n\n\nouts[current_slot]=out;\n\n//    msg.target_soc = 10;\n//    msg.load_limit = \"Allow Export\";\n//    msg.charge = \"No Grid or Gen\"\n//    msg.target_power = 500;\n\n\nreturn outs;\n\n//return msg;\n",
+        "outputs": 7,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1090,
+        "y": 620,
+        "wires": [
+            [
+                "6be7ddb0a325a632",
+                "e981084f9717fc12",
+                "5eebe33335fd3337"
+            ],
+            [
+                "0c8d4cc2311aced6"
+            ],
+            [
+                "a21c91a3d0be9c41"
+            ],
+            [
+                "2fa2bbe368680fc8"
+            ],
+            [
+                "750aec2eecf72c77"
+            ],
+            [
+                "f4162851e43cf93f"
+            ],
+            [
+                "e5ce95a049e51297"
+            ]
+        ]
+    },
+    {
+        "id": "5eebe33335fd3337",
+        "type": "api-call-service",
+        "z": "9061db0d93e63ca7",
+        "name": "",
+        "server": "e0bfd2ef.e1677",
+        "version": 5,
+        "debugenabled": false,
+        "domain": "number",
+        "service": "set_value",
+        "areaId": [],
+        "deviceId": [
+            "b3329870dd11c97c3c0bab65714459fa"
+        ],
+        "entityId": [
+            "number.sunsynk_grid_charge_battery_current"
+        ],
+        "data": "{\"value\":\"{{target_current}}\"}",
+        "dataType": "json",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "last",
+        "x": 1470,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6be7ddb0a325a632",
+        "type": "api-call-service",
+        "z": "9061db0d93e63ca7",
+        "name": "",
+        "server": "e0bfd2ef.e1677",
+        "version": 5,
+        "debugenabled": false,
+        "domain": "select",
+        "service": "select_option",
+        "areaId": [],
+        "deviceId": [
+            "b3329870dd11c97c3c0bab65714459fa"
+        ],
+        "entityId": [
+            "select.sunsynk_load_limit"
+        ],
+        "data": "{\"option\":\"{{load_limit}}\"}",
+        "dataType": "json",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "last",
+        "x": 1470,
+        "y": 480,
+        "wires": [
+            [
+                "e0e7cb416d174163"
+            ]
+        ]
+    },
+    {
+        "id": "e981084f9717fc12",
+        "type": "debug",
+        "z": "9061db0d93e63ca7",
+        "name": "out0",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1430,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "21724a69074a7ebe",
+        "type": "debug",
+        "z": "9061db0d93e63ca7",
+        "name": "out1",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1830,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "7ae97157319ab328",
+        "type": "debug",
+        "z": "9061db0d93e63ca7",
+        "name": "out2",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1830,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "a57dc027f87692c0",
+        "type": "debug",
+        "z": "9061db0d93e63ca7",
+        "name": "out3",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1830,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "496fe5eeda312974",
+        "type": "debug",
+        "z": "9061db0d93e63ca7",
+        "name": "out4",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1830,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "f14ff8932c6cb2bc",
+        "type": "debug",
+        "z": "9061db0d93e63ca7",
+        "name": "out5",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1830,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "8116aee1a5fcbd3f",
+        "type": "debug",
+        "z": "9061db0d93e63ca7",
+        "name": "out6",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1830,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "0c8d4cc2311aced6",
+        "type": "api-call-service",
+        "z": "9061db0d93e63ca7",
+        "name": "prog1 soc",
+        "server": "e0bfd2ef.e1677",
+        "version": 5,
+        "debugenabled": false,
+        "domain": "number",
+        "service": "set_value",
+        "areaId": [],
+        "deviceId": [
+            "b3329870dd11c97c3c0bab65714459fa"
+        ],
+        "entityId": [
+            "number.sunsynk_prog1_capacity"
+        ],
+        "data": "{\"value\":\"{{soc}}\"}",
+        "dataType": "json",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "last",
+        "x": 1340,
+        "y": 580,
+        "wires": [
+            [
+                "dda14ebbb9c3e36d"
+            ]
+        ]
+    },
+    {
+        "id": "264df8ebd23b21c0",
+        "type": "api-call-service",
+        "z": "9061db0d93e63ca7",
+        "name": "prog1 charge",
+        "server": "e0bfd2ef.e1677",
+        "version": 5,
+        "debugenabled": false,
+        "domain": "select",
+        "service": "select_option",
+        "areaId": [],
+        "deviceId": [
+            "b3329870dd11c97c3c0bab65714459fa"
+        ],
+        "entityId": [
+            "select.sunsynk_prog1_charge"
+        ],
+        "data": "{\"option\":\"{{charge}}\"}",
+        "dataType": "json",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "last",
+        "x": 1670,
+        "y": 580,
+        "wires": [
+            [
+                "21724a69074a7ebe"
+            ]
+        ]
+    },
+    {
+        "id": "dda14ebbb9c3e36d",
+        "type": "api-call-service",
+        "z": "9061db0d93e63ca7",
+        "name": "prog1 power",
+        "server": "e0bfd2ef.e1677",
+        "version": 5,
+        "debugenabled": false,
+        "domain": "number",
+        "service": "set_value",
+        "areaId": [],
+        "deviceId": [
+            "b3329870dd11c97c3c0bab65714459fa"
+        ],
+        "entityId": [
+            "number.sunsynk_prog1_power"
+        ],
+        "data": "{\"value\":\"{{target_power}}\"}",
+        "dataType": "json",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "last",
+        "x": 1510,
+        "y": 580,
+        "wires": [
+            [
+                "264df8ebd23b21c0"
+            ]
+        ]
+    },
+    {
+        "id": "e0e7cb416d174163",
+        "type": "debug",
+        "z": "9061db0d93e63ca7",
+        "name": "out01",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1690,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "a21c91a3d0be9c41",
+        "type": "api-call-service",
+        "z": "9061db0d93e63ca7",
+        "name": "prog2 soc",
+        "server": "e0bfd2ef.e1677",
+        "version": 5,
+        "debugenabled": false,
+        "domain": "number",
+        "service": "set_value",
+        "areaId": [],
+        "deviceId": [
+            "b3329870dd11c97c3c0bab65714459fa"
+        ],
+        "entityId": [
+            "number.sunsynk_prog2_capacity"
+        ],
+        "data": "{\"value\":\"{{soc}}\"}",
+        "dataType": "json",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "last",
+        "x": 1340,
+        "y": 640,
+        "wires": [
+            [
+                "3c0b01111a5983f5"
+            ]
+        ]
+    },
+    {
+        "id": "3c0b01111a5983f5",
+        "type": "api-call-service",
+        "z": "9061db0d93e63ca7",
+        "name": "prog2 power",
+        "server": "e0bfd2ef.e1677",
+        "version": 5,
+        "debugenabled": false,
+        "domain": "number",
+        "service": "set_value",
+        "areaId": [],
+        "deviceId": [
+            "b3329870dd11c97c3c0bab65714459fa"
+        ],
+        "entityId": [
+            "number.sunsynk_prog2_power"
+        ],
+        "data": "{\"value\":\"{{target_power}}\"}",
+        "dataType": "json",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "last",
+        "x": 1510,
+        "y": 640,
+        "wires": [
+            [
+                "11642990cd1eb658"
+            ]
+        ]
+    },
+    {
+        "id": "11642990cd1eb658",
+        "type": "api-call-service",
+        "z": "9061db0d93e63ca7",
+        "name": "prog2 charge",
+        "server": "e0bfd2ef.e1677",
+        "version": 5,
+        "debugenabled": false,
+        "domain": "select",
+        "service": "select_option",
+        "areaId": [],
+        "deviceId": [
+            "b3329870dd11c97c3c0bab65714459fa"
+        ],
+        "entityId": [
+            "select.sunsynk_prog2_charge"
+        ],
+        "data": "{\"option\":\"{{charge}}\"}",
+        "dataType": "json",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "last",
+        "x": 1670,
+        "y": 640,
+        "wires": [
+            [
+                "7ae97157319ab328"
+            ]
+        ]
+    },
+    {
+        "id": "2fa2bbe368680fc8",
+        "type": "api-call-service",
+        "z": "9061db0d93e63ca7",
+        "name": "prog3 soc",
+        "server": "e0bfd2ef.e1677",
+        "version": 5,
+        "debugenabled": false,
+        "domain": "number",
+        "service": "set_value",
+        "areaId": [],
+        "deviceId": [
+            "b3329870dd11c97c3c0bab65714459fa"
+        ],
+        "entityId": [
+            "number.sunsynk_prog3_capacity"
+        ],
+        "data": "{\"value\":\"{{soc}}\"}",
+        "dataType": "json",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "last",
+        "x": 1340,
+        "y": 700,
+        "wires": [
+            [
+                "0162a71be03a24b8"
+            ]
+        ]
+    },
+    {
+        "id": "0162a71be03a24b8",
+        "type": "api-call-service",
+        "z": "9061db0d93e63ca7",
+        "name": "prog3 power",
+        "server": "e0bfd2ef.e1677",
+        "version": 5,
+        "debugenabled": false,
+        "domain": "number",
+        "service": "set_value",
+        "areaId": [],
+        "deviceId": [
+            "b3329870dd11c97c3c0bab65714459fa"
+        ],
+        "entityId": [
+            "number.sunsynk_prog3_power"
+        ],
+        "data": "{\"value\":\"{{target_power}}\"}",
+        "dataType": "json",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "last",
+        "x": 1510,
+        "y": 700,
+        "wires": [
+            [
+                "172a6a0c491a651c"
+            ]
+        ]
+    },
+    {
+        "id": "172a6a0c491a651c",
+        "type": "api-call-service",
+        "z": "9061db0d93e63ca7",
+        "name": "prog3 charge",
+        "server": "e0bfd2ef.e1677",
+        "version": 5,
+        "debugenabled": false,
+        "domain": "select",
+        "service": "select_option",
+        "areaId": [],
+        "deviceId": [
+            "b3329870dd11c97c3c0bab65714459fa"
+        ],
+        "entityId": [
+            "select.sunsynk_prog3_charge"
+        ],
+        "data": "{\"option\":\"{{charge}}\"}",
+        "dataType": "json",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "last",
+        "x": 1670,
+        "y": 700,
+        "wires": [
+            [
+                "a57dc027f87692c0"
+            ]
+        ]
+    },
+    {
+        "id": "750aec2eecf72c77",
+        "type": "api-call-service",
+        "z": "9061db0d93e63ca7",
+        "name": "prog4 soc",
+        "server": "e0bfd2ef.e1677",
+        "version": 5,
+        "debugenabled": false,
+        "domain": "number",
+        "service": "set_value",
+        "areaId": [],
+        "deviceId": [
+            "b3329870dd11c97c3c0bab65714459fa"
+        ],
+        "entityId": [
+            "number.sunsynk_prog4_capacity"
+        ],
+        "data": "{\"value\":\"{{soc}}\"}",
+        "dataType": "json",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "last",
+        "x": 1340,
+        "y": 760,
+        "wires": [
+            [
+                "e2bc7c9820c4361e"
+            ]
+        ]
+    },
+    {
+        "id": "e2bc7c9820c4361e",
+        "type": "api-call-service",
+        "z": "9061db0d93e63ca7",
+        "name": "prog4 power",
+        "server": "e0bfd2ef.e1677",
+        "version": 5,
+        "debugenabled": false,
+        "domain": "number",
+        "service": "set_value",
+        "areaId": [],
+        "deviceId": [
+            "b3329870dd11c97c3c0bab65714459fa"
+        ],
+        "entityId": [
+            "number.sunsynk_prog4_power"
+        ],
+        "data": "{\"value\":\"{{target_power}}\"}",
+        "dataType": "json",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "last",
+        "x": 1510,
+        "y": 760,
+        "wires": [
+            [
+                "ac56fd2d126ec79b"
+            ]
+        ]
+    },
+    {
+        "id": "ac56fd2d126ec79b",
+        "type": "api-call-service",
+        "z": "9061db0d93e63ca7",
+        "name": "prog4 charge",
+        "server": "e0bfd2ef.e1677",
+        "version": 5,
+        "debugenabled": false,
+        "domain": "select",
+        "service": "select_option",
+        "areaId": [],
+        "deviceId": [
+            "b3329870dd11c97c3c0bab65714459fa"
+        ],
+        "entityId": [
+            "select.sunsynk_prog4_charge"
+        ],
+        "data": "{\"option\":\"{{charge}}\"}",
+        "dataType": "json",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "last",
+        "x": 1670,
+        "y": 760,
+        "wires": [
+            [
+                "496fe5eeda312974"
+            ]
+        ]
+    },
+    {
+        "id": "f4162851e43cf93f",
+        "type": "api-call-service",
+        "z": "9061db0d93e63ca7",
+        "name": "prog5 soc",
+        "server": "e0bfd2ef.e1677",
+        "version": 5,
+        "debugenabled": false,
+        "domain": "number",
+        "service": "set_value",
+        "areaId": [],
+        "deviceId": [
+            "b3329870dd11c97c3c0bab65714459fa"
+        ],
+        "entityId": [
+            "number.sunsynk_prog5_capacity"
+        ],
+        "data": "{\"value\":\"{{soc}}\"}",
+        "dataType": "json",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "last",
+        "x": 1340,
+        "y": 820,
+        "wires": [
+            [
+                "c5d5524aefbc7b21"
+            ]
+        ]
+    },
+    {
+        "id": "c5d5524aefbc7b21",
+        "type": "api-call-service",
+        "z": "9061db0d93e63ca7",
+        "name": "prog5 power",
+        "server": "e0bfd2ef.e1677",
+        "version": 5,
+        "debugenabled": false,
+        "domain": "number",
+        "service": "set_value",
+        "areaId": [],
+        "deviceId": [
+            "b3329870dd11c97c3c0bab65714459fa"
+        ],
+        "entityId": [
+            "number.sunsynk_prog5_power"
+        ],
+        "data": "{\"value\":\"{{target_power}}\"}",
+        "dataType": "json",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "last",
+        "x": 1510,
+        "y": 820,
+        "wires": [
+            [
+                "732ac5997bb5882b"
+            ]
+        ]
+    },
+    {
+        "id": "732ac5997bb5882b",
+        "type": "api-call-service",
+        "z": "9061db0d93e63ca7",
+        "name": "prog5 charge",
+        "server": "e0bfd2ef.e1677",
+        "version": 5,
+        "debugenabled": false,
+        "domain": "select",
+        "service": "select_option",
+        "areaId": [],
+        "deviceId": [
+            "b3329870dd11c97c3c0bab65714459fa"
+        ],
+        "entityId": [
+            "select.sunsynk_prog5_charge"
+        ],
+        "data": "{\"option\":\"{{charge}}\"}",
+        "dataType": "json",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "last",
+        "x": 1670,
+        "y": 820,
+        "wires": [
+            [
+                "f14ff8932c6cb2bc"
+            ]
+        ]
+    },
+    {
+        "id": "e5ce95a049e51297",
+        "type": "api-call-service",
+        "z": "9061db0d93e63ca7",
+        "name": "prog6 soc",
+        "server": "e0bfd2ef.e1677",
+        "version": 5,
+        "debugenabled": false,
+        "domain": "number",
+        "service": "set_value",
+        "areaId": [],
+        "deviceId": [
+            "b3329870dd11c97c3c0bab65714459fa"
+        ],
+        "entityId": [
+            "number.sunsynk_prog6_capacity"
+        ],
+        "data": "{\"value\":\"{{soc}}\"}",
+        "dataType": "json",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "last",
+        "x": 1340,
+        "y": 880,
+        "wires": [
+            [
+                "3076b506fa6bcb55"
+            ]
+        ]
+    },
+    {
+        "id": "3076b506fa6bcb55",
+        "type": "api-call-service",
+        "z": "9061db0d93e63ca7",
+        "name": "prog6 power",
+        "server": "e0bfd2ef.e1677",
+        "version": 5,
+        "debugenabled": false,
+        "domain": "number",
+        "service": "set_value",
+        "areaId": [],
+        "deviceId": [
+            "b3329870dd11c97c3c0bab65714459fa"
+        ],
+        "entityId": [
+            "number.sunsynk_prog6_power"
+        ],
+        "data": "{\"value\":\"{{target_power}}\"}",
+        "dataType": "json",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "last",
+        "x": 1510,
+        "y": 880,
+        "wires": [
+            [
+                "4258c75d276a65db"
+            ]
+        ]
+    },
+    {
+        "id": "4258c75d276a65db",
+        "type": "api-call-service",
+        "z": "9061db0d93e63ca7",
+        "name": "prog6 charge",
+        "server": "e0bfd2ef.e1677",
+        "version": 5,
+        "debugenabled": false,
+        "domain": "select",
+        "service": "select_option",
+        "areaId": [],
+        "deviceId": [
+            "b3329870dd11c97c3c0bab65714459fa"
+        ],
+        "entityId": [
+            "select.sunsynk_prog6_charge"
+        ],
+        "data": "{\"option\":\"{{charge}}\"}",
+        "dataType": "json",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "last",
+        "x": 1670,
+        "y": 880,
+        "wires": [
+            [
+                "8116aee1a5fcbd3f"
+            ]
+        ]
+    },
+    {
+        "id": "4c71773dbc628671",
+        "type": "inject",
+        "z": "9061db0d93e63ca7",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "3600",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 110,
+        "y": 100,
+        "wires": [
+            [
+                "84af9391d94a9fb7"
+            ]
+        ]
+    },
+    {
+        "id": "84af9391d94a9fb7",
+        "type": "moment",
+        "z": "9061db0d93e63ca7",
+        "name": "",
+        "topic": "",
+        "input": "payload",
+        "inputType": "msg",
+        "inTz": "Europe/London",
+        "adjAmount": 0,
+        "adjType": "days",
+        "adjDir": "add",
+        "format": "YYYY-MM-DD HH:mm:ss",
+        "locale": "C",
+        "output": "payload",
+        "outputType": "msg",
+        "outTz": "Europe/London",
+        "x": 480,
+        "y": 100,
+        "wires": [
+            [
+                "bb432fb5a6dc945f"
+            ]
+        ]
+    },
+    {
+        "id": "bb432fb5a6dc945f",
+        "type": "api-call-service",
+        "z": "9061db0d93e63ca7",
+        "name": "",
+        "server": "e0bfd2ef.e1677",
+        "version": 5,
+        "debugenabled": true,
+        "domain": "text",
+        "service": "set_value",
+        "areaId": [],
+        "deviceId": [
+            "b3329870dd11c97c3c0bab65714459fa"
+        ],
+        "entityId": [
+            "text.sunsynk_date_time"
+        ],
+        "data": "{\"value\":\"{{payload}}\"}",
+        "dataType": "json",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "last",
+        "x": 760,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e0bfd2ef.e1677",
+        "type": "server",
+        "name": "Home Assistant",
+        "version": 5,
+        "addon": true,
+        "rejectUnauthorizedCerts": true,
+        "ha_boolean": "y|yes|true|on|home|open",
+        "connectionDelay": true,
+        "cacheJson": true,
+        "heartbeat": false,
+        "heartbeatInterval": 30,
+        "areaSelector": "friendlyName",
+        "deviceSelector": "friendlyName",
+        "entitySelector": "friendlyName",
+        "statusSeparator": "at: ",
+        "statusYear": "hidden",
+        "statusMonth": "short",
+        "statusDay": "numeric",
+        "statusHourCycle": "h23",
+        "statusTimeFormat": "h:m",
+        "enableGlobalContextStore": true
+    },
+    {
+        "id": "4ca3edbc050adbe9",
+        "type": "ha-entity-config",
+        "server": "e0bfd2ef.e1677",
+        "deviceConfig": "256f4e8d9fe414f5",
+        "name": "Start Discharge Time",
+        "version": "6",
+        "entityType": "time",
+        "haConfig": [
+            {
+                "property": "name",
+                "value": "Start Discharge Time"
+            },
+            {
+                "property": "icon",
+                "value": ""
+            },
+            {
+                "property": "entity_picture",
+                "value": ""
+            }
+        ],
+        "resend": false,
+        "debugEnabled": false
+    },
+    {
+        "id": "f3b3b5f3917de552",
+        "type": "ha-entity-config",
+        "server": "e0bfd2ef.e1677",
+        "deviceConfig": "256f4e8d9fe414f5",
+        "name": "End Discharge Time",
+        "version": "6",
+        "entityType": "time",
+        "haConfig": [
+            {
+                "property": "name",
+                "value": "End Discharge Time"
+            },
+            {
+                "property": "icon",
+                "value": ""
+            },
+            {
+                "property": "entity_picture",
+                "value": ""
+            }
+        ],
+        "resend": false,
+        "debugEnabled": false
+    },
+    {
+        "id": "b2f599741deab7d0",
+        "type": "ha-entity-config",
+        "server": "e0bfd2ef.e1677",
+        "deviceConfig": "256f4e8d9fe414f5",
+        "name": "Start Charge Time",
+        "version": "6",
+        "entityType": "time",
+        "haConfig": [
+            {
+                "property": "name",
+                "value": "Start Charge Time"
+            },
+            {
+                "property": "icon",
+                "value": ""
+            },
+            {
+                "property": "entity_picture",
+                "value": ""
+            }
+        ],
+        "resend": false,
+        "debugEnabled": false
+    },
+    {
+        "id": "a9fcf270e3281aae",
+        "type": "ha-entity-config",
+        "server": "e0bfd2ef.e1677",
+        "deviceConfig": "256f4e8d9fe414f5",
+        "name": "End Charge Time",
+        "version": "6",
+        "entityType": "time",
+        "haConfig": [
+            {
+                "property": "name",
+                "value": "End Charge Time"
+            },
+            {
+                "property": "icon",
+                "value": ""
+            },
+            {
+                "property": "entity_picture",
+                "value": ""
+            }
+        ],
+        "resend": false,
+        "debugEnabled": false
+    },
+    {
+        "id": "8970f70a786cca41",
+        "type": "ha-entity-config",
+        "server": "e0bfd2ef.e1677",
+        "deviceConfig": "256f4e8d9fe414f5",
+        "name": "Hold SoC Enable",
+        "version": "6",
+        "entityType": "switch",
+        "haConfig": [
+            {
+                "property": "name",
+                "value": "Hold SoC Enable"
+            },
+            {
+                "property": "icon",
+                "value": ""
+            },
+            {
+                "property": "entity_picture",
+                "value": ""
+            },
+            {
+                "property": "entity_category",
+                "value": ""
+            },
+            {
+                "property": "device_class",
+                "value": ""
+            }
+        ],
+        "resend": false,
+        "debugEnabled": true
+    },
+    {
+        "id": "a2817464718525af",
+        "type": "ha-entity-config",
+        "server": "e0bfd2ef.e1677",
+        "deviceConfig": "256f4e8d9fe414f5",
+        "name": "Schedule Discharge",
+        "version": "6",
+        "entityType": "switch",
+        "haConfig": [
+            {
+                "property": "name",
+                "value": "Schedule Discharge"
+            },
+            {
+                "property": "icon",
+                "value": ""
+            },
+            {
+                "property": "entity_picture",
+                "value": ""
+            },
+            {
+                "property": "entity_category",
+                "value": ""
+            },
+            {
+                "property": "device_class",
+                "value": ""
+            }
+        ],
+        "resend": false,
+        "debugEnabled": false
+    },
+    {
+        "id": "421515f2e5f5967b",
+        "type": "ha-entity-config",
+        "server": "e0bfd2ef.e1677",
+        "deviceConfig": "256f4e8d9fe414f5",
+        "name": "Schedule Charge",
+        "version": "6",
+        "entityType": "switch",
+        "haConfig": [
+            {
+                "property": "name",
+                "value": "Schedule Charge"
+            },
+            {
+                "property": "icon",
+                "value": ""
+            },
+            {
+                "property": "entity_picture",
+                "value": ""
+            },
+            {
+                "property": "entity_category",
+                "value": ""
+            },
+            {
+                "property": "device_class",
+                "value": ""
+            }
+        ],
+        "resend": false,
+        "debugEnabled": false
+    },
+    {
+        "id": "cf65e62feedeb8b9",
+        "type": "ha-entity-config",
+        "server": "e0bfd2ef.e1677",
+        "deviceConfig": "256f4e8d9fe414f5",
+        "name": "Discharge Power",
+        "version": "6",
+        "entityType": "number",
+        "haConfig": [
+            {
+                "property": "name",
+                "value": "Discharge Power"
+            },
+            {
+                "property": "icon",
+                "value": ""
+            },
+            {
+                "property": "entity_picture",
+                "value": ""
+            },
+            {
+                "property": "entity_category",
+                "value": ""
+            },
+            {
+                "property": "device_class",
+                "value": "power"
+            },
+            {
+                "property": "unit_of_measurement",
+                "value": "W"
+            },
+            {
+                "property": "min_value",
+                "value": 0
+            },
+            {
+                "property": "max_value",
+                "value": 5000
+            },
+            {
+                "property": "step_value",
+                "value": ""
+            },
+            {
+                "property": "mode",
+                "value": "auto"
+            }
+        ],
+        "resend": false,
+        "debugEnabled": false
+    },
+    {
+        "id": "431582c910f2871d",
+        "type": "ha-entity-config",
+        "server": "e0bfd2ef.e1677",
+        "deviceConfig": "256f4e8d9fe414f5",
+        "name": "Charge Power",
+        "version": "6",
+        "entityType": "number",
+        "haConfig": [
+            {
+                "property": "name",
+                "value": "Charge Power"
+            },
+            {
+                "property": "icon",
+                "value": ""
+            },
+            {
+                "property": "entity_picture",
+                "value": ""
+            },
+            {
+                "property": "entity_category",
+                "value": ""
+            },
+            {
+                "property": "device_class",
+                "value": "power"
+            },
+            {
+                "property": "unit_of_measurement",
+                "value": "W"
+            },
+            {
+                "property": "min_value",
+                "value": 0
+            },
+            {
+                "property": "max_value",
+                "value": 5000
+            },
+            {
+                "property": "step_value",
+                "value": ""
+            },
+            {
+                "property": "mode",
+                "value": "auto"
+            }
+        ],
+        "resend": false,
+        "debugEnabled": false
+    },
+    {
+        "id": "0ecac548a5811365",
+        "type": "ha-entity-config",
+        "server": "e0bfd2ef.e1677",
+        "deviceConfig": "256f4e8d9fe414f5",
+        "name": "Hold SoC",
+        "version": "6",
+        "entityType": "number",
+        "haConfig": [
+            {
+                "property": "name",
+                "value": "Hold SoC"
+            },
+            {
+                "property": "icon",
+                "value": ""
+            },
+            {
+                "property": "entity_picture",
+                "value": ""
+            },
+            {
+                "property": "entity_category",
+                "value": ""
+            },
+            {
+                "property": "device_class",
+                "value": "battery"
+            },
+            {
+                "property": "unit_of_measurement",
+                "value": "%"
+            },
+            {
+                "property": "min_value",
+                "value": 0
+            },
+            {
+                "property": "max_value",
+                "value": 100
+            },
+            {
+                "property": "step_value",
+                "value": ""
+            },
+            {
+                "property": "mode",
+                "value": "auto"
+            }
+        ],
+        "resend": false,
+        "debugEnabled": false
+    },
+    {
+        "id": "256f4e8d9fe414f5",
+        "type": "ha-device-config",
+        "name": "Inverter Control",
+        "hwVersion": "",
+        "manufacturer": "Node-RED",
+        "model": "",
+        "swVersion": ""
+    }
+]
